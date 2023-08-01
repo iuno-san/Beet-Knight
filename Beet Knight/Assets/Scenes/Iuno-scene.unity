@@ -1122,9 +1122,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_LinearDrag: 1
+  m_AngularDrag: 2
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1135,7 +1135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1612295770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1199,6 +1199,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  speed: 8
+  jumpingPower: 18
 --- !u!1 &2135374232
 GameObject:
   m_ObjectHideFlags: 0
